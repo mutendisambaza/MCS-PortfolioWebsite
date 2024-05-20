@@ -25,9 +25,7 @@
                       <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                       </li>
-                      <!-- <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                      </li> -->
+                      
                       <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#About">About</a>
                         <!-- <a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
@@ -52,8 +50,6 @@
               </nav>
 <!-- INTRODUCTION-->  
             <div class = "introduction" href="#home">
-                <div class="pfp">
-                </div>
                 <div class="greeting">
                   <!-- <div id="delayedForeword">this is </div> -->
                   <h1> <span class="auto-type"></span></h1>
@@ -69,9 +65,13 @@
             <div class="about">
                 <div class ="container">
                     <div class="section-header">
-                      <span class="section-title" href="#About"><i class="bi bi-file-person-fill h5"></i> About me</span> 
+                      <span class="section-title" href="#About"> <i class="bi bi-file-person-fill h5"></i> About me</span> 
                     </div>
                     <div class = "content">
+                      <div class="about-image-container">
+                        <img src="img/fullbodyshot.jpg" alt="Mutendi C. Sambaza">
+                        <div class="overlay"></div>
+                      </div>
                       <div class="about-text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -94,11 +94,8 @@
                         <a href="https://www.lipsum.com/">Scelerisque</a> 
                         Porttitor lacus luctus accumsan tortor. Volutpat blandit aliquam etiam erat velit scelerisque.
                       </div>  
-                <div class="about-image-container">
-                  <img src="img/fullbodyshot.jpg" alt="Mutendi C. Sambaza">
-                  <div class="overlay"></div>
-                </div>
-                </div>
+                      
+                    </div>
                 </div>
             </div>
 <!-- EXPERIENCE-->  
@@ -107,15 +104,25 @@
                 <div class="section-header">
                   <span class="section-title" href="#experience"><i class="bi bi-briefcase-fill h5"></i> Experience</span> 
                 </div>
-                <!-- <div class = "content">
-                  <div div="certifications">
-                    <div id="cards">
-                      <div class="card"></div>
-                      <div class="card"></div>
-                      <div class="card"></div>
-                    </div>
-                  </div> -->
-                </div>
+                <div class="content"></div>
+                <div class = "tech-stack">
+                  <span class="H2">Tech Stack</span>
+                  <div class="scroller" data-speed="fast">
+                    <ul class="tag-list scroller__inner">
+                      <li><img src="img/Python-logo.png"></li>
+                      <li><img src="img/c-logos.png"></li>
+                      <li><img src="img/java-logo.png"></li>
+                      <li><img src="img/javascript-logo.png"></li>
+                      <li><img src="img/html-logo.png"></li>
+                      <li><img src="img/CSS3_logo.png"></li>
+                      <li><img src="img/nodejs-logo.png"></li>
+                      <li><img src="img/git-logo.png"></li>
+                      <li><img src="img/react-logo.png"></li>
+                      <li><img src="img/sql-logo.png"></li>
+                      <li><img src="img/access-logo.png"></li>
+                    </ul>
+                  </div>
+                </div> 
               </div>
             </div>
 <!-- PROJECTS-->  
@@ -129,21 +136,21 @@
                         <!-- Wrapper for slides -->
                     <div class="carousel-inner">
                       <div class="carousel-item active c-item">
-                        <img src="img/ph.png" class="d-block w-100" alt="First slide">
+                        <img src="img/placeholder.png" class="d-block w-100" alt="First slide">
                         <div class="carousel-caption d-none d-md-block">
                           <h5>...</h5>
                           <p>...</p>
                         </div>
                       </div>
                       <div class="carousel-item c-item">
-                        <img src="img/ph.png" class="d-block w-100" alt="Second slide">
+                        <img src="img/placeholder.png" class="d-block w-100" alt="Second slide">
                         <div class="carousel-caption d-none d-md-block">
                           <h5>...</h5>
                           <p>...</p>
                         </div>
                       </div>
                       <div class="carousel-item c-item">
-                        <img src="img/ph.png" class="d-block w-100" alt="Third slide">
+                        <img src="img/placeholder.png" class="d-block w-100" alt="Third slide">
                         <div class="carousel-caption d-none d-md-block">
                           <h5>...</h5>
                           <p>...</p>
@@ -170,10 +177,19 @@
             </div>
 <!-- FOOTER--> 
             <div class = "hyperlinks">
-              <i class="bi bi-linkedin h4" href="https://www.linkedin.com/in/mutendisambaza/"></i>
-              <i class="bi bi-discord h4"></i>
-              <i class="bi bi-envelope-fill h4"></i>
-              <i class="bi bi-file-earmark-person-fill h4"></i>
+              <a class="btn " href="https://www.linkedin.com/in/mutendisambaza/" target = "_blank">
+                <i class="bi bi-linkedin h4" ></i>
+              </a>
+              <a class="btn" href="https://github.com/mutendisambaza?tab=overview&from=2024-05-01&to=2024-05-19" target = "_blank">
+                <i class="bi bi-github h4"></i>
+              </a>
+              <a class="btn" href="mailto:mcsambaza@gmail.com" target = "_blank">
+                <i class="bi bi-envelope-fill h4"></i>
+              </a>
+              <a class="btn" href="docs/Mutendi Sambaza - Resume.pdf" target = "_blank">
+                <i class="bi bi-file-earmark-person-fill h4"></i>
+              </a>
+              
             </div>
             <footer class="container footer">
               <f1>Created by Mutendi Sambaza<br>All Rights reserved.©</f1>
