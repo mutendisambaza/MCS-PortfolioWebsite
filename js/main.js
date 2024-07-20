@@ -1,18 +1,53 @@
-
-//Delayed Foreword
 window.onload = function () {
-    var loaderDelay = 3;
+    var loaderDelay = .1;
     setTimeout(loaderPhaseOut, loaderDelay * 1000);
-    var preloaderDelay = 3.4;
-    setTimeout(preloaderPhaseOut, preloaderDelay * 1000);
-
 
 };
 
 
+/* -- PRELOADER-- */
+function loaderPhaseOut(){
+    document.getElementById("loader").style.visibility = "collapse";
+    document.getElementById("preloader").style.visibility = "collapse";
+    document.getElementById("preloader").style.opacity = 0;
+}
+
+
+
+const radials = [...document.querySelectorAll('.radial')];
+let degrees = 0;
+for(i=0; i < radials.length; i++) {
+	degrees += 0;
+	radials[i].style.transform = `rotate(${degrees}deg)`;
+	degrees += 45;
+}
+radials.forEach((radial, index) => {
+	setTimeout(function() {
+		radial.classList.add('glow');
+	},index * 200);
+});
+
+
+/* -- Delayed Foreword -- */
 // function showText() {
 //     document.getElementById("delayedForeword").style.visibility = "visible";
 // }
+
+
+/* -- Glow effect -- */
+const blob = document.getElementById("blob");
+
+window.onpointermove = event => { 
+  const { clientX, clientY } = event;
+  blob.animate({
+    left: `${clientX}px`,
+    top: `${clientY}px`
+  }, { duration: 18000, fill: "forwards" });
+}
+
+
+
+
 
 //Infinite Scrolling Tech Stack
 const scrollers = document.querySelectorAll(".scroller");
@@ -39,28 +74,4 @@ function addAnimation() {
     });
   });
 }
-
-
-
-
-function loaderPhaseOut(){
-    document.getElementById("loader").style.visibility = "collapse";
-}
-function preloaderPhaseOut(){
-  document.getElementById("preloader").style.visibility = "collapse";
-}
-const radials = [...document.querySelectorAll('.radial')];
-let degrees = 0;
-for(i=0; i < radials.length; i++) {
-	degrees += 0;
-	radials[i].style.transform = `rotate(${degrees}deg)`;
-	degrees += 45;
-}
-radials.forEach((radial, index) => {
-	setTimeout(function() {
-		radial.classList.add('glow');
-	},index * 350);
-})
-
-;
 

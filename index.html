@@ -14,7 +14,8 @@
     <body>
       
         <main>
-
+          
+          
 <!-- NAVIGATION BAR-->  
             <nav class="navbar  navbar-expand-lg navbar-dark rounded fixed-top" aria-label="Thirteenth navbar example">
                 <div class="container-fluid">
@@ -25,7 +26,7 @@
                     <a class="navbar-brand col-lg-3 me-0" href="#"><img src="img/crown-icon.png"></a>
                     <ul class="navbar-nav col-lg-6 justify-content-lg-center">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#Home">Home</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#About">About</a>
@@ -37,9 +38,9 @@
                       <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#projects" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Personal Website</a></li>
-                          <li><a class="dropdown-item" href="#">Other item</a></li>
-                          <li><a class="dropdown-item" href="#">Other item</a></li>
+                          <li><a class="dropdown-item" href="#project1">Personal Website</a></li>
+                          <li><a class="dropdown-item" href="#project2">Other item</a></li>
+                          <li><a class="dropdown-item" href="#project3">Other item</a></li>
                         </ul>
                       </li>
                     </ul>
@@ -50,7 +51,9 @@
                 </div>
               </nav>
 <!-- INTRODUCTION-->  
-            <div class = "introduction" href="#home">
+            <div id="blob"></div>
+            <div id="blur">
+            <div id = "Home" class = "introduction" href="#home">
                 <div class="greeting">
                   <!-- <div id="delayedForeword">this is </div> -->
                   <h1> <span class="auto-type"></span></h1>
@@ -61,12 +64,14 @@
                   Bringing forth a positive attitude, experience, passion for people and a willingness and motivation to learn new things. -->
                 </div>
                 <button type="button" class="btn btn-outline-primary btn-lg">Get in Touch!</button>
+                
             </div>
+          
 <!-- ABOUT ME-->  
-            <div class="about">
+            <div id = "About" class="about">
                 <div class ="container">
                     <div class="section-header">
-                      <span class="section-title" href="#About"> <i class="bi bi-file-person-fill h5"></i> About me</span> 
+                      <span class="section-title" href="#About"> <i class="bi bi-file-person-fill h5"></i> About Me</span> 
                     </div>
                     <div class = "content">
                       <div class="about-image-container">
@@ -98,15 +103,50 @@
                     </div>
                 </div>
             </div>
+          </div>
 <!-- EXPERIENCE-->  
-            <div class="experience">
+            <div id = "experience" class="experience">
               <div class ="container">
                 <div class="section-header">
                   <span class="section-title" href="#experience"><i class="bi bi-briefcase-fill h5"></i> Experience</span> 
                 </div>
-                <div class="content"></div>
+                <div class="content">
+                  <div class="timeline">
+
+                    <div class="event">
+                      <div class="timePeriod 1g:w-1/4">
+                        <p>2021 - Present</p>
+                      </div>
+                      <div class="jobDescription lg:w-3/4"> 
+                        <div class="jobTitle"> SOFTWARE DEVELOPER INTERN
+                          <span class="companyName">@AMAZON</span>
+                        </div>
+                        <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. fermentum dui faucibus in ornare. </p>
+                          <span class="pillBox" >python</span>
+                          <span class="pillBox" >java</span>
+                      </div>
+                    </div>
+                    <div class="event">
+                      <div class="timePeriod 1g:w-1/4">
+                        <p>2020 - 2021</p>
+                      </div>
+                      <div class="jobDescription lg:w-3/4"> 
+                        <div class="jobTitle"> WEB DEVELOPER INTERN
+                          <span class="companyName">@APPLE</span>
+                        </div>
+                        <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. fermentum dui faucibus in ornare. </p>
+                          <span class="pillBox" >javascript</span>
+                          <span class="pillBox" >html</span>
+                          <span class="pillBox" >css</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                
+
                 <div class = "tech-stack">
-                  <span class="H2">Tech Stack</span>
+                  <span class="pillBox">Tech Stack</span>
                   <div class="scroller" data-speed="fast">
                     <ul class="tag-list scroller__inner">
                       <li><img src="img/Python-logo.png"></li>
@@ -123,7 +163,8 @@
                     </ul>
                   </div>
                 </div> 
-              </div>
+                </div>
+                
             </div>
 <!-- PROJECTS-->  
             <div class="projects">
@@ -135,21 +176,21 @@
                   <div id="hero-carousel" class="carousel slide" data-ride="carousel">
                         <!-- Wrapper for slides -->
                     <div class="carousel-inner">
-                      <div class="carousel-item active c-item">
+                      <div id = "project1"class="carousel-item active c-item">
                         <img src="img/placeholder.png" class="d-block w-100" alt="First slide">
                         <div class="carousel-caption d-none d-md-block">
                           <h5>...</h5>
                           <p>...</p>
                         </div>
                       </div>
-                      <div class="carousel-item c-item">
+                      <div id = "project2" class="carousel-item c-item">
                         <img src="img/placeholder.png" class="d-block w-100" alt="Second slide">
                         <div class="carousel-caption d-none d-md-block">
                           <h5>...</h5>
                           <p>...</p>
                         </div>
                       </div>
-                      <div class="carousel-item c-item">
+                      <div id = "project3" class="carousel-item c-item">
                         <img src="img/placeholder.png" class="d-block w-100" alt="Third slide">
                         <div class="carousel-caption d-none d-md-block">
                           <h5>...</h5>

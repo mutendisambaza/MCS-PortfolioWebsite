@@ -24,9 +24,10 @@
   body {
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
   }
 
-  /* Preloader styles */
+  /* <-- Preloader styles --> */
 #preloader {
   position: fixed;
   top: 0;
@@ -38,7 +39,11 @@
   justify-content: center;
   align-items: center;
   z-index: 9999; /* Ensure it's above other content */
+  /* transition-delay: 4s; */
+  transition: 5s ease;
+  opacity: 1;
 }
+
   #loader {
     position: relative;
     width: 100px;
@@ -67,12 +72,13 @@
      /* animation: glow 1.5s ease-in-out infinite alternate; */
   }
 
-
 main{
     background: var(--bg-color);
+    overflow: hidden;
 }
 
-/* NAV BAR*/
+
+/* <-- NAV BAR --> */
 .navbar{
     background-color:var(--bg-color);
     opacity: 0.8;
@@ -101,6 +107,32 @@ main{
 .btn.btn-primary:hover{
   background:var(--accenture-blue);
 }
+
+/* <-- BLOB --> */
+#blob {
+  background-color: white;
+  height: 70vmax;
+  width: 100%;
+  aspect-ratio: 1;
+  position:absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: linear-gradient(to right, var(--complement-blue), var(--dark-blue));
+  animation: rotate 10s infinite;
+  opacity: 0.6;
+  /* overflow-x: hidden; */
+}
+
+/* <-- BLUR --> */
+#blur {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  backdrop-filter: blur(12vmax);
+}
+
 
 /* INTRODUCTION*/
 .introduction{
@@ -182,17 +214,21 @@ n{
 
 /* ABOUT */
 .about{
-    display: block;
+    display: flex;
     background-color:var(--bg-embelishment-color);
     margin: auto;
     max-width: 1200px;
     min-height: 50vh;
-    margin-bottom: 40px;
-    padding-top: 20px;
+    margin-bottom: 200px;
+    padding-top: 30px;
     padding-bottom: 50px;
     border: solid 0.05px var( --break-divider-outline);
     /* box-shadow: 0rem 0.25rem 0.6rem -0.15rem var(--dark-blue); */
     border-radius: 24px;
+    z-index: -9999;
+}
+.about:hover{
+    transform: translateY(4px);
 }
 
 .section-header{
@@ -205,6 +241,7 @@ n{
     font-size: 30px;
     font-weight: 500;
     color: var(--active-white); 
+    text-shadow:1px 1px 5px var(--dormant-grey),1px 1px 5px var(--active-white);
  }
 
  .section-title i{
@@ -233,12 +270,15 @@ h2::after {
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    /* flex-direction: column; */
+    align-content: space-around;
+    align-items: center;
     /* background-color: white; */
  }
  .about-text{
-    color:#9b9b9c;
+  color: var(--lightest-grey);
     font-family: NTR,sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     margin-right: 40px;
     max-width: 700px;
     font-weight: 200;
@@ -277,9 +317,10 @@ h2::after {
 }
 .about-image-container{
     padding-top: 10px;
-    max-width: 370px;
+    padding-right: 4%;
+    max-width: 375px;
     max-height: 450px; 
-    min-width: 300px; 
+    min-width: 250px; 
     min-height: 200px;
 }
 .about img{
@@ -289,12 +330,7 @@ h2::after {
     /* filter: grayscale(100%); */
     opacity: 0.7;
 }
-.about:hover{
-    /* border-radius: 10px; */
-    transform: translateY(4px);
-    /* filter: grayscale(100%); */
-    /* opacity: 1; */
-}
+
 
 /* EXPERIENCE */
     /* align-items: center;
@@ -315,15 +351,74 @@ h2::after {
       justify-content: center;
   }
 
-  .H2{
+.timeline{
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline p{
+    color: var(--dormant-grey);
+  }
+
+  .pillBox{
     background: var(--dark-blue);
     color: var(--accenture-blue);
     width: 120px;
-    height: 26px;
-    font-size: 17px;
+    height: 28px;
+    font-size: larger;
     text-align: center;
     border-radius: 15px;
   }
+
+  
+
+  .event{
+    grid-column: auto;
+    padding-bottom: 10%;
+    display: flex;
+    flex-wrap: nowrap;
+    /* width: 20px; */
+  }
+
+  .timePeriod{
+    display: flex;
+    width:25%;
+    justify-content: center;
+    /* align-items: center; */
+    color: var(--dormant-grey);
+    font-size: large;
+    margin-right:2%;
+  }
+
+  .jobTitle{
+    font-size:x-large;
+    color: var(--active-white);
+  }
+  .companyName{
+    font-size:large;
+    text-align: center;
+    color: var(--accenture-blue);
+  }
+  .jobDescription{
+    width: 100%;
+  }
+
+  .jobDescription p{
+    color: var(--lightest-grey);
+  }
+  .jobDescription .pillBox{
+    background: var(--dark-blue);
+    color: var(--accenture-blue);
+    /* padding-top: 0.7%;
+    padding-bottom: 1%; */
+    padding: 1%;
+    font-size: medium;
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid var(--accenture-blue);
+    
+  }
+
   .scroller {
     max-width: 1200px;
     padding-top: 15px;
@@ -347,7 +442,7 @@ h2::after {
     );
     mask: linear-gradient(90deg, transparent, white 30%, white 70%, transparent);
   }
-  
+
   .scroller[data-animated="true"] .scroller__inner {
     width: max-content;
     flex-wrap: nowrap;
