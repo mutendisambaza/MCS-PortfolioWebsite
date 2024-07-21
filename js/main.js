@@ -1,5 +1,5 @@
 window.onload = function () {
-    var loaderDelay = .1;
+    var loaderDelay = 3;
     setTimeout(loaderPhaseOut, loaderDelay * 1000);
 
 };
@@ -7,6 +7,7 @@ window.onload = function () {
 
 /* -- PRELOADER-- */
 function loaderPhaseOut(){
+    window.scrollTo(0, 0);
     document.getElementById("loader").style.visibility = "collapse";
     document.getElementById("preloader").style.visibility = "collapse";
     document.getElementById("preloader").style.opacity = 0;
