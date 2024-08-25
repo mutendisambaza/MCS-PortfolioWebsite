@@ -14,7 +14,6 @@ function loaderPhaseOut(){
 }
 
 
-
 const radials = [...document.querySelectorAll('.radial')];
 let degrees = 0;
 for(i=0; i < radials.length; i++) {
