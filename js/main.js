@@ -28,12 +28,6 @@ radials.forEach((radial, index) => {
 });
 
 
-/* -- Delayed Foreword -- */
-// function showText() {
-//     document.getElementById("delayedForeword").style.visibility = "visible";
-// }
-
-
 /* -- Glow effect -- */
 const blob = document.getElementById("blob");
 
@@ -44,7 +38,6 @@ window.onpointermove = event => {
     top: `${clientY}px`
   }, { duration: 18000, fill: "forwards" });
 }
-
 
 
 
@@ -74,4 +67,6 @@ function addAnimation() {
     });
   });
 }
+
+
 

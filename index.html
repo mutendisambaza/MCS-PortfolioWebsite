@@ -38,14 +38,16 @@
                       <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#projects" data-bs-toggle="dropdown" aria-expanded="false">Work</a>
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#project1">Personal Website</a></li>
-                          <li><a class="dropdown-item" href="#project2">Other item</a></li>
+                          <li><a class="dropdown-item" href="#project1">BSIT Nexus</a></li>
+                          <li><a class="dropdown-item" href="#project2">Portfolio </a></li>
                           <li><a class="dropdown-item" href="#project3">Other item</a></li>
                         </ul>
                       </li>
                     </ul>
                     <div class="d-lg-flex col-lg-3 justify-content-lg-end">
-                      <button class="btn btn-primary" href="docs/Mutendi Sambaza - Resume.pdf" target = "_blank">Resume</button>
+                      <a href="docs/Mutendi Sambaza - Resume.pdf" target = "_blank">
+                         <button class="btn btn-primary">Resume</button>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -63,7 +65,10 @@
                   <!-- that will allow me to utilise my skills and leverage my learning.
                   Bringing forth a positive attitude, experience, passion for people and a willingness and motivation to learn new things. -->
                 </div>
-                <button type="button" class="btn btn-outline-primary btn-lg">Get in Touch!</button>
+                <a href="mailto:mcsambaza@gmail.com" target = "_blank">
+                  <button type="button"  class="btn btn-outline-primary btn-lg">Get in Touch!</button>
+                </a>
+                
                 
             </div>
           
@@ -71,7 +76,7 @@
             <div id = "About" class="about">
                 <div class ="container">
                     <div class="section-header">
-                      <span class="section-title" href="#About">About Me</span>
+                      <span class="section-title" href="#About">My Story.</span>
                        <!-- <i class="bi bi-file-person-fill h5"></i> -->
                     </div>
                     <div class = "content">
@@ -109,8 +114,7 @@
             <div id = "experience" class="experience">
               <div class ="container">
                 <div class="section-header">
-                  <span class="section-title" href="#experience"> Experience</span>
-                   <!-- <i class="bi bi-briefcase-fill h5"></i> -->
+                  <span class="section-title" href="#experience"> My Experiences.</span>
                 </div>
                 <div class="content">
                   <div class="timeline">    
@@ -182,18 +186,41 @@
                 
             </div>
 <!-- PROJECTS-->  
-            <div class="work">
+            <div class="work" id="project1">
               <div class ="container">
                 <div class="section-header">
-                  <span class="section-title" href="#work"> Work</span>
+                  <span class="section-title" > My Creations.</span>
                   <!-- <i class="bi bi-file-earmark-code-fill h5"></i> -->
                 </div>
                 <div class = "content">
-                  <div id="hero-carousel" class="carousel slide" data-ride="carousel">
+                  <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-ride="carousel" data-bs-wrap="true" data-bs-pause="hover" >
                         <!-- Wrapper for slides -->
                     <div class="carousel-inner">
-                      <div id = "project1"class="carousel-item active c-item">
-                        <img src="img/portfolioProject.png" class="d-block w-100" alt="First slide">
+                      <div id = "project1" class="carousel-item active c-item" data-bs-interval="9000">
+                        <img src="img/BSITN.png" class="d-block w-100" alt="First slide">
+                        <div class="carousel-caption d-md-block">
+                          <p class="carousel-title">Black Students in Tech</p>
+                          <p class="carousel-description ">I founded a network of black tertiary students aiming to bridge the systemic gap in Tech by focusing on career development, creating industry connections, all the while fostering a supportive environment tailored for success. </p>
+                            <!-- <span class = "external-links"> -->
+                              <a class="links " href="https://www.linkedin.com/company/bsit-nexus" target = "_blank">
+                                <i class="bi bi-linkedin h4" ></i>
+                              </a>
+                        </div>
+                      </div>
+                      <div id = "project2" class="carousel-item c-item" data-bs-interval="5000">
+                        <img src="img/JumpOVOrProject.png" class="d-block w-100" alt="Second slide">
+                        <div class="carousel-caption d-sm-block">
+                          <p class="carousel-title">jumpOVOr</p>
+                          <p class="carousel-description">A pop culture spin on the Chrome No Internet Dino Game #TeamKendrick</p>
+                            <p class = "techstack">JAVASCRIPT HTML|CSS </p>
+                            <!-- <span class = "external-links"> -->
+                              <a class="links" href="https://github.com/mutendisambaza/JumpOVOr" target = "_blank">
+                                <i class="bi bi-github h4"></i>
+                              </a>
+                        </div>
+                      </div>
+                      <div id = "project3"class="carousel-item c-item" data-bs-interval="5000">
+                        <img src="img/portfolioProject.png" class="d-block w-100" alt="Third slide">
                         <div class="carousel-caption d-sm-block">
                           <p class="carousel-title">portfolio<span class = "version"> (V1)</span></p>
                           <p class="carousel-description ">This is my first iteration of my Portfolio website showcsing who I am in the best way I knew how. The first of many more to come.
@@ -204,25 +231,6 @@
                               </a>
                             <!-- </span> -->
                           </p>
-                        </div>
-                      </div>
-                      <div id = "project2" class="carousel-item c-item">
-                        <img src="img/JumpOVOrProject.png" class="d-block w-100" alt="Second slide">
-                        <div class="carousel-caption d-sm-block">
-                          <p class="carousel-title">jumpOVOr</p>
-                          <p class="carousel-description">A pop culture spin on the Chrome No Internet Dino Game #TeamKendrick
-                            <p class = "techstack">JAVASCRIPT HTML|CSS </p>
-                            <!-- <span class = "external-links"> -->
-                              <a class="links" href="https://github.com/mutendisambaza/JumpOVOr" target = "_blank">
-                                <i class="bi bi-github h4"></i>
-                              </a>
-                        </div>
-                      </div>
-                      <div id = "project3" class="carousel-item c-item">
-                        <img src="img/placeholder.png" class="d-block w-100" alt="Third slide">
-                        <div class="carousel-caption d-md-block">
-                          <h5>...</h5>
-                          <p>...</p>
                         </div>
                       </div>
                     </div>
@@ -241,7 +249,24 @@
                       <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
                   </div>
+            
                 </div>
+                <ul class = "projects-grid">
+                    <li class = "projects-card">
+                        <div class="card-container">
+                          <div class="card-header">
+                          <div class = "folder-icon">
+                            <i class="bi bi-folder2-open h2"></i>
+                          </div>
+                          <span class = "link-icon">
+                            <i class="bi bi-box-arrow-up-right h5"></i>
+                          </span>
+                          </div>
+                        </div>
+                      
+                      
+                    </li>
+                </ul>
               </div> 
             </div>
 <!-- FOOTER--> 
@@ -252,13 +277,6 @@
               <a class="btn" href="https://github.com/mutendisambaza?tab=overview&from=2024-05-01&to=2024-05-19" target = "_blank">
                 <i class="bi bi-github h4"></i>
               </a>
-              <a class="btn" href="mailto:mcsambaza@gmail.com" target = "_blank">
-                <i class="bi bi-envelope-fill h4"></i>
-              </a>
-              <a class="btn" href="docs/Mutendi Sambaza - Resume.pdf" target = "_blank">
-                <i class="bi bi-file-earmark-person-fill h4"></i>
-              </a>
-              
             </div>
             <footer class="container footer">
               <f1>Created by Mutendi Sambaza<br>All Rights reserved.©</f1>
