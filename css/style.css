@@ -130,7 +130,7 @@ main{
 }
 
 /* <-- BLOB --> */
-#blob {
+/* #blob {
   background-color: white;
   height: 40vmax;
   width: 100%;
@@ -143,17 +143,38 @@ main{
   background: linear-gradient(to right, var(--complement-blue), var(--dark-blue));
   animation: rotate 10s infinite;
   opacity: 0.6;
-  /* overflow-x: hidden; */
-}
+} */
 
 /* <-- BLUR --> */
-#blur {
+/* #blur {
   height: 100%;
   width: 100%;
   z-index: 1;
   backdrop-filter: blur(12vmax);
+} */
+#blob {
+  background-color: white;
+  height: 40vmax;
+  height: 400px; /* Fallback for older browsers */
+  width: 100%;
+  aspect-ratio: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); /* Replaces translate shorthand */
+  border-radius: 50%;
+  background: linear-gradient(to right, var(--complement-blue), var(--dark-blue));
+  animation: rotate 10s infinite;
+  opacity: 0.6;
 }
 
+#blur {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  -webkit-backdrop-filter: blur(12vmax); 
+  backdrop-filter: blur(12vmax); 
+}
 @media (max-width: 600px) {
   #blur {
     backdrop-filter: none;
