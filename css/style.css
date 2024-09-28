@@ -229,6 +229,15 @@ n{
       text-shadow: 0 0 1px #fff,0 0 20px #fff;
     }
 } 
+@keyframes glowww {
+  from {
+      text-shadow: 0 0 1px #fff, 0 0 20px #fff, 0 0 30px #024bba, 0 0 40px #024bba, 0 0 50px #024bba, 0 0 60px #024bba, 0 0 70px #024bba;
+  }
+  to {
+      text-shadow: 0 0 1px #fff, 0 0 20px #fff;
+  }
+}
+
 
 .typed-cursor{
     opacity: 1;
