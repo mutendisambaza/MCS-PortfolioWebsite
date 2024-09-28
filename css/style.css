@@ -188,7 +188,7 @@ main{
   }
   .about{
     max-height: 100%!important;
-    margin-bottom: 100px !important;
+    margin-bottom: 60px !important;
   }
   .about-text{
     min-width: 99%;
@@ -261,7 +261,7 @@ n{
     max-width: 1200px;
     max-height: 600px;
     min-width: 350px;
-    margin-bottom: 200px;
+    margin-bottom: 30px;
     padding-top: 30px;
     padding-bottom: 50px;
     border: solid 0.05px var( --break-divider-outline);
@@ -314,7 +314,7 @@ n{
  }
 .about b{
     color:var(--emphasis-white);
-    font-size: 18px;
+    font-size: 19px;
 }
 
 .list{
@@ -336,13 +336,11 @@ n{
   }
 .about a{
     text-decoration: none!important;
-    color:var(--emphasis-white);
-    font-size: 18px;
-    font-weight:400px!important;
+    color:var(--accenture-blue);
+    font-size: 19px;
 }
 .about a:hover{
-  color:var(--accenture-blue);
-  /* font-size: 21px; */
+  color:var(--emphasis-white);
 }
 .about-image-container{
     /* padding-right: 2%; */
@@ -388,7 +386,14 @@ n{
 .timeline p{
     color: var(--dormant-grey);
   }
-
+  .event a{
+    text-decoration: none!important;
+    color:var(--accenture-blue);
+    font-size: 19px;
+}
+.event a:hover{
+  color:var(--emphasis-white);
+}
   .pillBox{
     background: var(--dark-blue);
     color: var(--accenture-blue);
@@ -677,13 +682,12 @@ margin-bottom: 40px;
 }
 
 .card-wrap {
-  width: 300px;
-  height: 400px;
+  flex: 1 1 auto; /* Allow the card to take up space based on content */
+  max-width: 300px; /* Optional: Set a maximum width to maintain card size */
+  height: auto; /* Allow height to adjust based on content */
   perspective: 800px;
   position: relative;
-  flex: 1 1 300px;
 }
-
 .card {
   width: 100%;
   height: 100%;

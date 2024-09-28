@@ -41,7 +41,8 @@ window.onpointermove = event => {
 /* -- Effect on Experience Events activating on sight-- */
 document.addEventListener("DOMContentLoaded", () => {
   const events = document.querySelectorAll(".event");
-  
+  const isPhone = window.innerWidth <= 600; 
+  const threshold = isPhone ? 0.5 : 0.8;
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -51,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }, {
-    threshold: 0.8,
+    threshold: threshold,
     rootMargin: '-15% 0px -28% 0px'
   });
   
