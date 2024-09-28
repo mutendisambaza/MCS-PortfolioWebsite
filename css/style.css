@@ -314,17 +314,14 @@ n{
  }
 .about b{
     color:var(--emphasis-white);
-    font-size: 21px;
+    font-size: 18px;
 }
-.about b:hover{
-  color:var(--accenture-blue);
-  font-size: 21px;
-}
+
 .list{
     display: grid;
     grid-template-columns: repeat(2,minmax(150px,10px));
     list-style-type:none;
-    padding-top: 20px;
+    padding-top: 10px;
     align-items: center;
     justify-items: stretch;
     justify-content: space-around;
@@ -339,7 +336,13 @@ n{
   }
 .about a{
     text-decoration: none!important;
-    color:var(--accenture-blue);
+    color:var(--emphasis-white);
+    font-size: 18px;
+    font-weight:400px!important;
+}
+.about a:hover{
+  color:var(--accenture-blue);
+  /* font-size: 21px; */
 }
 .about-image-container{
     /* padding-right: 2%; */
