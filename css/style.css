@@ -712,9 +712,14 @@ margin-bottom: 40px;
 }
 
 .card-wrap {
-  flex: 1 1 auto; /* Allow the card to take up space based on content */
-  max-width: 300px; /* Optional: Set a maximum width to maintain card size */
-  height: auto; /* Allow height to adjust based on content */
+  /* flex: 1 1 auto;  */
+  /* Allow the card to take up space based on content */
+  /* max-width: 300px; Optional: Set a maximum width to maintain card size */
+  /* height: auto; Allow height to adjust based on content */
+  /* flex: 0 1 300px; Fixed width for all cards */
+  max-width: 300px; /* Optional: Maintain consistent width */
+  height: 400px; /* Set a fixed height for all cards */
+
   perspective: 800px;
   position: relative;
 }
@@ -727,6 +732,10 @@ margin-bottom: 40px;
   border-radius: 24px !important;
   box-shadow: 0 5px 5px var(--dark-blue);
   transition: transform 0.2s, box-shadow 0.2s;
+
+  flex-direction: column; /* Ensure content stacks vertically */
+  justify-content: space-between; /* Distribute content vertically */
+  overflow: hidden; /* Prevent content overflow */
 }
 
 .card:hover{
@@ -764,8 +773,10 @@ margin-bottom: 40px;
 }
 
 .card-content {
-  height: 100%;
+  /* height: 100%; */
+  height: calc(100% - 48px); /* Subtract padding or spacing */
   display: block;
+
 }
 
 .card-content .techstack{
@@ -778,6 +789,9 @@ margin-bottom: 40px;
   height: 100%;
   padding: 24px;
   position: relative;
+
+  overflow: hidden; /* Prevent content overflow */
+  justify-content: space-between; /* Ensure even spacing within the card */
 }
 
 .card-link {
