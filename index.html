@@ -24,7 +24,7 @@
   /* Hana 404: the portrait, desaturated and thrown out of focus */
   .photo {
     position: absolute; inset: -6%;
-    background: url("headshot.jpg") 50% 35% / cover no-repeat;
+    background: url("portrait-2026.jpg") 50% 35% / cover no-repeat;
     /* White studio backdrop: pulled down to Hana's mid-grey so the white headline keeps its contrast */
     filter: grayscale(1) blur(16px) brightness(0.58) contrast(1.05);
     opacity: 0; transform: scale(1.08);
@@ -122,7 +122,7 @@
 
     var img = new Image();
     img.onload = img.onerror = function () { requestAnimationFrame(function () { document.body.classList.add("ready"); }); };
-    img.src = "headshot.jpg";
+    img.src = "portrait-2026.jpg";
 
     if (!fine || reduce) return;
 
